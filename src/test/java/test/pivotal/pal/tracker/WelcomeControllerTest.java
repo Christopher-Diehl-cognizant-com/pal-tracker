@@ -9,6 +9,11 @@ import org.junit.jupiter.api.Test;
  * @author 780449
  */
 public class WelcomeControllerTest{
+
+	/**
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void itSaysHello() throws Exception{
 		WelcomeController controller = new WelcomeController("A welcome message");

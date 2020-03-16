@@ -13,10 +13,18 @@ public class WelcomeController{
 
 	private String helloMessage;
 
+	/**
+	 *
+	 * @param helloMessage
+	 */
 	public WelcomeController(@Value("${welcome.message}") String helloMessage){
 		this.helloMessage = helloMessage;
 	}
 
+	/**
+	 *
+	 * @return
+	 */
 	@GetMapping("/")
 	public String sayHello(){
 //		return "hello";

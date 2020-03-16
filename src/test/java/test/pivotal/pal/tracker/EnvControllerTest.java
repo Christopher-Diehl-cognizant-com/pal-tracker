@@ -10,6 +10,11 @@ import org.junit.jupiter.api.Test;
  * @author 780449
  */
 public class EnvControllerTest{
+
+	/**
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void getEnv() throws Exception{
 		EnvController controller = new EnvController(
