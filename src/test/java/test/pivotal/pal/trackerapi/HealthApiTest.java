@@ -15,13 +15,20 @@ import static com.jayway.jsonpath.JsonPath.parse;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
+/**
+ *
+ * @author 780449
+ */
 @SpringBootTest(classes = PalTrackerApplication.class, webEnvironment = RANDOM_PORT)
 public class HealthApiTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
+	/**
+	 *
+	 */
+	@Test
     public void healthTest() {
         ResponseEntity<String> response = this.restTemplate.getForEntity("/actuator/health", String.class);
 
